@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app{
+    width: 400px;
+    background-color: rgb(191, 220, 238);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.app form{
+    text-align: center;
+}
+
+input, select, button {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+
+}
+
+.app .todo{
+    display: flex;
+    background-color: rgb(241, 197, 158);
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    margin: .3rem;
+    border-radius: .5rem;
+    transition: transform 300ms;
+}
+
+.app .todo .fa-check{
+    color: limegreen;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+
+.app .todo .fa-trash{
+    color: #333;
+    cursor: pointer;
+}
+
+.checked{
+    background: rgb(153, 235, 153) !important;
+}
+
+
+.fall{
+    transform: translateY(1rem) rotate(5deg);
+}
